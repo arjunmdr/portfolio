@@ -250,13 +250,19 @@ font-size: 60px;
   }
   .intro{
     padding-top: 50%;
-    padding: 7%;
+    padding: 25% 7%;
   }
   .services{
-    padding: 7%;
+    padding: 25% 7%;
   }
   .skills{
-    padding: 7%;
+    padding:25% 7%;
+  }
+  .hobbie{
+    padding: 30% 7%;
+  }
+  .contact-me{
+    padding-top: 25%;
   }
   .profile-pic{
     width: 40%;
