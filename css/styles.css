@@ -149,34 +149,37 @@ padding: 10% 10%;
   padding: 16% 16%;
 }
 .hobbie-img{
-  width: 100px;
+  width: 150px;
   margin: 10px;
 }
 .hobbies-txt{
   padding-bottom: 60px;
+  font-size: 30px;
   color: yellow;
 }
 
 
-/* BOTTOM SECTION */
-.bottom{
+/* FOOTER SECTION */
+.footer{
 background-color: #0b5269;
 color: #acdbdf;
 padding: 50px 0 20px;
 }
 
-
-
-.contact-me{
-
-}
 .footer-link{
   font-size: 20px;
+}
+.footer-link:hover{
+  text-decoration: none;
+  color: #000;
 }
 .copy-right{
   color: #EAF6F6;
   font-size: .75rem;
   padding: 20px 0;
+}
+.copy-right{
+  font-size: 20px;
 }
 
 
@@ -260,6 +263,7 @@ font-size: 60px;
   }
   .contact-me{
     padding-top: 25%;
+    padding-bottom: 15%;
   }
   .profile-pic{
     width: 40%;
