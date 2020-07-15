@@ -31,6 +31,7 @@ h4{
 }
 h5{
   font-size: 30px;
+  color: yellow;
 }
 a{
   color: yellow;
@@ -73,13 +74,17 @@ margin: 100px 0;
 }
 
 .intro{
-  padding: 15% 15%;
+  padding: 16% 16%;
   margin: auto;
-  font-style: 20px;
+  color: #fff;
+}
+.intro-para{
+  font-size: 25px;
+  text-align: justify;
 }
 
 .services{
-  padding: 15% 15%;
+  padding: 16% 16%;
 }
 .card{
   background-color: #17223b !important;
@@ -87,8 +92,6 @@ margin: 100px 0;
   margin: 50px auto;
   border-radius: 15px;
   text-align: center;
-  width: 400px;
-  height: 450px;
 }
 .card:hover{
   background-color: #263859 !important;
@@ -111,7 +114,7 @@ margin: 100px 0;
 
 /* SKILLS SECTION */
 .skills{
-    padding: 15% 15%;
+    padding: 16% 16%;
 }
 .progress{
   height: 20px;
@@ -124,7 +127,7 @@ margin: 100px 0;
 
 /* HOBBIES SECTION */
 .hobbie{
-  padding: 15% 15%;
+  padding: 16% 16%;
 }
 
 
@@ -228,10 +231,30 @@ padding: 50px 0 20px;
     font-size: 7rem;
   }
   h3{
-
+font-size: 60px;
+  }
+  h5{
+    font-size: 40px;
+    color: yellow;
+  }
+  .intro{
+    padding: 7%;
+  }
+  .services{
+    padding: 7%;
+  }
+  .skills{
+    padding: 7%;
   }
   .profile-pic{
     width: 40%;
+  }
+  .intro-para{
+    font-size: 40px;
+    text-align: justify;
+  }
+  .card-text{
+    font-size: 35px;
   }
   .progress{
     height: 30px;
