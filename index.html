@@ -15,7 +15,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
   <!-- CSS LINK -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link id="theme" rel="stylesheet" href="css/dark-theme.css">
 
   <!-- GOOGLE FONT LINK -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Montserrat|Sacramento&display=swap" rel="stylesheet">
@@ -30,6 +30,7 @@
       <h1>I'm Arjun</h1>
       <img class="profile-pic" src="images/arjun.png" alt="profile-pic">
       <h2>Web Developer</h2>
+      <button id="theme-toggle" class="btn btn-dark btn-outline">Switch to light mode</button>
     </div>
 
 
@@ -59,7 +60,7 @@
 
         <div class="order">
           <h3>What are you loking for! <br> Give the order now. </h3>
-          <button class="btn" type="button" name="button"><a class="btn-text" href="mailto:arjunmdrcalicut@gmail.com">Order Now</a></button>
+          <button class="btn main-btn" type="button" name="button"><a class="main-btn-text" href="mailto:arjunmdrcalicut@gmail.com">Order Now</a></button>
 
         </div>
       </div>
@@ -156,7 +157,7 @@
       <div class="contact-me">
         <h3>Get In Touch</h3>
 
-<button class="btn" type="button" name="button"><a class="btn-text" href="mailto:arjunmdrcalicut@gmail.com">Contact Me</a></button>
+<button class="btn main-btn" type="button" name="button"><a class="main-btn-text" href="mailto:arjunmdrcalicut@gmail.com">Contact Me</a></button>
 
       </div>
     </div>
@@ -170,7 +171,29 @@
     </div>
 
 
-
   </div>
+
+
+<script type="text/javascript">
+// this one is jut to wait for the page to load
+document.addEventListener('DOMContentLoaded', () => {
+
+  const themeStylesheet = document.getElementById('theme');
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle.addEventListener('click', () => {
+      // if it's light -> go dark
+      if(themeStylesheet.href.includes('dark')){
+          themeStylesheet.href = 'css/light-theme.css';
+          themeToggle.innerText = 'Switch to dark mode';
+      } else {
+          // if it's dark -> go light
+          themeStylesheet.href = 'css/dark-theme.css';
+          themeToggle.innerText = 'Switch to light mode';
+
+      }
+  })
+})
+</script>
+
 </body>
 </html>
