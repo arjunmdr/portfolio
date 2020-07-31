@@ -98,12 +98,16 @@ padding: 10% 10%;
   border-radius: 15px;
   text-align: center;
 }
+.card-title{
+  padding-top: 30px;
+}
 .card:hover{
   background-color: #a4c5c6 !important;
   color: #acdbdf !important;
 }
 .card-text{
   color: #092532;
+  padding-bottom: 30px;
 }
 .card-img-top{
   width: 90px;
@@ -111,10 +115,6 @@ padding: 10% 10%;
   margin: 20px auto;
 }
 
-/* ORDER */
-.order{
-  padding: 12% 12%;
-}
 .main-btn{
   background-color: #acdbdf !important;
   margin-top: 50px !important;
